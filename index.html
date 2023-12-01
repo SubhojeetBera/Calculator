@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main>
+        <h1>Calculator</h1>
+        <div id="container">
+            <div class="sub_container1">
+                <input type="text" name="" id="inputarea" readonly>
+                
+
+            </div>
+            <div class="sub_container2">
+                <button class="btn" onclick="resultvalue='';document.querySelector('#inputarea').value=resultvalue">C</button>
+                <button class="btn" onclick="resultvalue+='1';document.querySelector('#inputarea').value=resultvalue;">1</button>
+                <button class="btn" onclick="resultvalue+='2';document.querySelector('#inputarea').value=resultvalue;">2</button>
+                <button class="btn" onclick="resultvalue+='3';document.querySelector('#inputarea').value=resultvalue;">3</button>
+                <button class="btn" onclick="resultvalue+='4';document.querySelector('#inputarea').value=resultvalue;">4</button>
+                <button class="btn" onclick="resultvalue+='5';document.querySelector('#inputarea').value=resultvalue;">5</button>
+                <button class="btn" onclick="resultvalue+='6';document.querySelector('#inputarea').value=resultvalue;">6</button>
+                <button class="btn" onclick="resultvalue+='7';document.querySelector('#inputarea').value=resultvalue;">7</button>
+                <button class="btn" onclick="resultvalue+='8';document.querySelector('#inputarea').value=resultvalue;">8</button>
+                <button class="btn" onclick="resultvalue+='9';document.querySelector('#inputarea').value=resultvalue;">9</button>                
+                <button class="btn" onclick="resultvalue+='0';document.querySelector('#inputarea').value=resultvalue;">0</button>
+                <button class="btn" onclick="resultvalue+='+';document.querySelector('#inputarea').value=resultvalue;">+</button>
+                <button class="btn" onclick="resultvalue+='-';document.querySelector('#inputarea').value=resultvalue;">-</button>
+                <button class="btn" onclick="resultvalue+='/';document.querySelector('#inputarea').value=resultvalue;">/</button>
+                <button class="btn" onclick="resultvalue+='*';document.querySelector('#inputarea').value=resultvalue;">*</button>
+                <button class="btn" onclick="resultvalue+='.';document.querySelector('#inputarea').value=resultvalue;">.</button>
+                <button class="result" onclick="resultvalue=eval(resultvalue);document.querySelector('#inputarea').value=resultvalue;">=</button>
+
+            </div>
+        </div>
+
+    </main>
+    <script>
+        let resultvalue='';
+        document.querySelector('#inputarea').value=resultvalue;
+    </script>
+</body>
+</html>
